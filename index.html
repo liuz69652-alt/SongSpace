@@ -2,62 +2,96 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Songspace — 连接知识、训练与实践的个人成长操作系统。" />
-  <title>Songspace · Growth OS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Songspace：由 Obsidian 驱动的知识管理、技能训练、成长追踪与商业实践系统。" />
+  <meta name="theme-color" content="#10251c" />
+  <title>Songspace · Growth Operating System</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="回到首页"><span class="brand-mark">S</span><span>songspace</span></a>
-    <nav aria-label="主导航">
-      <a href="#garden">知识花园</a><a href="#systems">成长系统</a><a href="#now">此刻</a>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">S</span><span><b>songspace</b><small>GROWTH OS</small></span></a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#knowledge">知识</a><a href="#english">英语</a><a href="#ai">AI</a><a href="#growth">成长</a><a href="#business">商业</a>
     </nav>
-    <button class="private-button" id="privateButton" aria-label="查看私人空间说明"><span>私密空间</span><span class="lock">⌁</span></button>
+    <div class="header-actions"><span class="sync-state"><i></i> Obsidian 已连接</span><button class="icon-button" id="themeButton" aria-label="切换深浅主题">◐</button><button class="private-button" id="privateButton"><span>私人驾驶舱</span><span class="lock">⌁</span></button></div>
   </header>
 
-  <main id="top">
-    <section class="hero reveal">
-      <p class="eyebrow"><span></span> SONG'S GROWTH OPERATING SYSTEM</p>
-      <h1>把零散的输入，<br />变成<span>持续生长的自己。</span></h1>
-      <p class="hero-copy">这里连接我的知识、训练、创造与商业实践。<br />记录不是终点，每一次输出都在开启下一次迭代。</p>
-      <div class="hero-actions"><a class="button primary" href="#garden">进入知识花园 <span>↗</span></a><a class="button ghost" href="#now">看看我在做什么</a></div>
-      <div class="hero-meta"><div><strong>127</strong><span>公开笔记</span></div><div><strong>486</strong><span>持续成长天数</span></div><div><strong>12</strong><span>正在进行的实验</span></div></div>
-      <div class="orbit" aria-hidden="true"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-core">输入<br /><i>↕</i><br />输出</div><span class="node n1">知识</span><span class="node n2">英语</span><span class="node n3">AI</span><span class="node n4">成长</span><span class="node n5">商业</span></div>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy reveal"><p class="eyebrow"><span></span> SONG'S GROWTH OPERATING SYSTEM · V2.0</p><h1>让知识、行动与反馈，<br />在同一个系统里<span>持续复利。</span></h1><p>这是我的第二大脑，也是公开的成长档案。Obsidian 负责沉淀思考，Songspace 负责连接、训练、追踪与输出。</p><div class="hero-actions"><a class="button primary" href="#command">打开今日工作台 <b>↘</b></a><a class="button secondary" href="garden.html">漫游知识花园 <b>↗</b></a></div><div class="principles"><span>PUBLIC BY CHOICE</span><i></i><span>LOCAL FIRST</span><i></i><span>BUILD IN PUBLIC</span></div></div>
+      <div class="hero-system reveal" aria-label="成长闭环示意图"><svg viewBox="0 0 440 440" role="img" aria-label="输入、连接、实践、反馈、输出组成的成长闭环"><defs><linearGradient id="loop" x1="0" x2="1"><stop stop-color="#d6ef70"/><stop offset="1" stop-color="#7bc7a0"/></linearGradient></defs><circle cx="220" cy="220" r="164" class="loop-bg"/><circle cx="220" cy="220" r="164" class="loop-progress"/><circle cx="220" cy="220" r="82" class="core-ring"/><text x="220" y="209" text-anchor="middle">GROWTH</text><text x="220" y="235" text-anchor="middle" class="core-cn">成长闭环</text></svg><span class="loop-node n-input"><i>01</i>输入<small>捕捉信息</small></span><span class="loop-node n-connect"><i>02</i>连接<small>形成认知</small></span><span class="loop-node n-practice"><i>03</i>实践<small>真实行动</small></span><span class="loop-node n-feedback"><i>04</i>反馈<small>数据复盘</small></span><span class="loop-node n-output"><i>05</i>输出<small>创造资产</small></span></div>
     </section>
 
-    <section class="ticker" aria-label="当前状态"><span>NOW</span><p>正在构建：个人 AI 工作流 2.0</p><i></i><p>本周主题：从消费信息到创造资产</p><i></i><p>连续学习 46 天</p></section>
-
-    <section class="section" id="garden">
-      <div class="section-heading reveal"><div><p class="eyebrow">01 · DIGITAL GARDEN</p><h2>知识不是仓库，<br />是一座<span>会生长的花园。</span></h2></div><p>从 Obsidian 中筛选、连接与公开。每篇笔记都有自己的生命阶段，也会在新的思考里长出枝丫。</p></div>
-      <div class="garden-toolbar reveal"><div class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索笔记、标签或主题…" /></div><div class="filters" id="filters"><button class="active" data-filter="all">全部</button><button data-filter="知识">知识</button><button data-filter="英语">英语</button><button data-filter="AI">AI</button><button data-filter="商业">商业</button></div></div>
-      <div class="note-grid" id="noteGrid"></div>
-      <div class="section-link"><a href="#garden">浏览全部知识节点 <span>→</span></a></div>
-    </section>
-
-    <section class="section systems-section" id="systems">
-      <div class="section-heading reveal"><div><p class="eyebrow">02 · GROWTH SYSTEMS</p><h2>五个系统，<br />共同驱动<span>长期进化。</span></h2></div><p>目标被拆成可行动的系统，进度被沉淀为可复用的资产。公开成果，保护过程。</p></div>
-      <div class="system-grid">
-        <article class="system-card knowledge reveal"><span class="system-number">01</span><div class="system-icon">✦</div><p class="system-kicker">KNOWLEDGE</p><h3>知识体系</h3><p>数字花园、MOC 与双链网络，把输入组织成可以调用的认知结构。</p><div class="progress"><span style="width:76%"></span></div><small>127 个公开节点 · 8 个内容地图</small><a href="#garden">探索知识花园 →</a></article>
-        <article class="system-card english reveal"><span class="system-number">02</span><div class="system-icon">Aa</div><p class="system-kicker">ENGLISH</p><h3>英语学习</h3><p>词汇、精读、听力与输出训练，让语言能力成为可以观测的复利曲线。</p><div class="progress"><span style="width:63%"></span></div><small>6,842 词汇量 · 连续 46 天</small><a href="#now">查看学习面板 →</a></article>
-        <article class="system-card ai reveal"><span class="system-number">03</span><div class="system-icon">⌘</div><p class="system-kicker">ARTIFICIAL INTELLIGENCE</p><h3>AI 学习</h3><p>学习路径、提示词与模型实验，记录从理解技术到创造工具的过程。</p><div class="progress"><span style="width:69%"></span></div><small>24 个 Prompt · 7 个实验</small><a href="#garden">进入 AI Lab →</a></article>
-        <article class="system-card growth reveal"><span class="system-number">04</span><div class="system-icon">↗</div><p class="system-kicker">PERSONAL GROWTH</p><h3>个人成长</h3><p>身体、习惯与职业发展的私人驾驶舱，只选择性公开里程碑与心得。</p><div class="private-pill">仅展示公开成果</div><a href="#now">查看成长足迹 →</a></article>
-        <article class="system-card business reveal"><span class="system-number">05</span><div class="system-icon">◇</div><p class="system-kicker">BUSINESS PRACTICE</p><h3>商业实践</h3><p>用真实实验训练商业判断：提出假设，投入行动，记录数据，诚实复盘。</p><div class="progress"><span style="width:48%"></span></div><small>12 个商业实验 · 5 篇研究</small><a href="#garden">查看商业案例 →</a></article>
+    <section class="command section" id="command">
+      <div class="section-title reveal"><div><p class="eyebrow">TODAY · 2026.08.06</p><h2>今日工作台</h2></div><p>不是展示虚构成绩，而是把真正需要推进的事情放在眼前。</p></div>
+      <div class="command-grid reveal">
+        <article class="focus-card"><header><span>今日首要任务</span><b>FOCUS</b></header><h3>完成个人知识库的公开分层</h3><p>为已成熟笔记补齐摘要、状态与公开标记。</p><div class="task-progress"><span style="width:68%"></span></div><footer><span>68% · 剩余 3 个节点</span><button data-action="focus">继续推进 →</button></footer></article>
+        <article class="pulse-card"><header><span>系统脉搏</span><b>THIS WEEK</b></header><div class="pulse-metrics"><div><strong>6.5<span>h</span></strong><small>深度工作</small></div><div><strong>4</strong><small>有效输出</small></div><div><strong>12</strong><small>新建连接</small></div></div><div class="mini-bars" aria-label="近七天投入趋势"><i style="height:30%"></i><i style="height:54%"></i><i style="height:42%"></i><i style="height:78%"></i><i style="height:64%"></i><i style="height:92%"></i><i class="today" style="height:70%"></i></div></article>
+        <article class="streak-card"><div class="streak-ring"><strong>46</strong><span>DAY STREAK</span></div><div><h3>保持节奏，而非追求完美。</h3><p>今天已完成英语精读与训练拉伸。</p><div class="week-dots"><span class="done">一</span><span class="done">二</span><span class="done">三</span><span class="done">四</span><span class="done">五</span><span>六</span><span>日</span></div></div></article>
       </div>
     </section>
 
-    <section class="section now-section" id="now">
-      <div class="now-card reveal"><div><p class="eyebrow">03 · NOW / JULY 2026</p><h2>我此刻正在<br /><span>专注这些事。</span></h2><p class="now-intro">公开当下的方向，是对注意力最温柔的约束。这个页面会随 Obsidian 的 Now 笔记更新。</p></div><div class="now-list"><article><span>01</span><div><small>BUILDING</small><h3>个人 AI 工作流 2.0</h3><p>把捕捉、整理、创作与复盘串成自动化管道。</p></div><b>进行中</b></article><article><span>02</span><div><small>LEARNING</small><h3>英文深度阅读计划</h3><p>用 100 篇长文训练结构化阅读与复述。</p></div><b>46 天</b></article><article><span>03</span><div><small>EXPERIMENTING</small><h3>一人公司的产品化实验</h3><p>从一个真实问题出发，完成第一次付费验证。</p></div><b>验证中</b></article></div></div>
+    <section class="knowledge section dark-section" id="knowledge">
+      <div class="section-title reveal"><div><p class="eyebrow">01 · KNOWLEDGE SYSTEM</p><h2>可探索的<span>数字花园</span></h2></div><p>笔记不是列表，而是由问题、主题和双链构成的认知网络。</p></div>
+      <div class="knowledge-layout">
+        <article class="graph-panel reveal"><header><div><h3>知识图谱</h3><p><span class="live-dot"></span> 公开节点实时生成</p></div><div class="graph-tools"><button id="graphReset" title="重置视图">◎</button><a href="garden.html">全屏探索 ↗</a></div></header><div class="graph-stage" id="graphStage"><svg id="graphSvg" viewBox="0 0 760 430" role="img" aria-label="知识笔记关系图"></svg><div class="graph-legend"><span><i class="c-knowledge"></i>知识</span><span><i class="c-ai"></i>AI</span><span><i class="c-english"></i>英语</span><span><i class="c-business"></i>商业</span></div></div></article>
+        <aside class="moc-panel reveal"><header><p class="eyebrow">MOC · CONTENT MAPS</p><a href="garden.html">全部 →</a></header><h3>内容地图</h3><div class="moc-list"><a href="garden.html"><span>01</span><div><b>知识管理系统</b><small>18 节点 · 42 连接</small></div><i>76%</i></a><a href="garden.html"><span>02</span><div><b>AI 应用学习路径</b><small>14 节点 · 29 连接</small></div><i>64%</i></a><a href="garden.html"><span>03</span><div><b>商业能力地图</b><small>9 节点 · 16 连接</small></div><i>41%</i></a><a href="garden.html"><span>04</span><div><b>语言习得方法</b><small>11 节点 · 23 连接</small></div><i>58%</i></a></div><div class="growth-legend"><span><i class="seed"></i>种子 <b>想法</b></span><span><i class="budding"></i>萌芽 <b>整理中</b></span><span><i class="evergreen"></i>常青 <b>持续更新</b></span></div></aside>
+      </div>
+      <div class="notes-head reveal"><div><h3>精选笔记</h3><span id="noteCount">由 Obsidian 自动筛选</span></div><div class="garden-toolbar"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索标题、摘要或标签" /></label><div class="filters" id="filters"><button class="active" data-filter="all">全部</button><button data-filter="知识">知识</button><button data-filter="英语">英语</button><button data-filter="AI">AI</button><button data-filter="商业">商业</button></div></div></div><div class="note-grid" id="noteGrid"></div><a class="text-link" href="garden.html">查看所有公开节点 <span>→</span></a>
     </section>
+
+    <section class="english section" id="english">
+      <div class="section-title reveal"><div><p class="eyebrow">02 · ENGLISH IMMERSION</p><h2>把语言训练变成<span>可见的复利</span></h2></div><p>输入、刻意练习与真实输出形成闭环，数据只用于调整训练。</p></div>
+      <div class="dashboard-grid english-grid reveal">
+        <article class="metric-card vocabulary"><header><div><span class="card-icon">Aa</span><div><small>ESTIMATED VOCABULARY</small><h3>词汇量增长</h3></div></div><span class="trend up">↗ 8.4%</span></header><div class="big-number">6,842 <small>words</small></div><svg class="line-chart" viewBox="0 0 500 150" aria-label="词汇量增长曲线"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2b7256" stop-opacity=".25"/><stop offset="1" stop-color="#2b7256" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0 130 C80 125 75 103 145 105 S240 92 285 69 S382 67 500 22 L500 150 L0 150Z"/><path d="M0 130 C80 125 75 103 145 105 S240 92 285 69 S382 67 500 22"/><circle cx="500" cy="22" r="5"/></svg><div class="chart-axis"><span>3月</span><span>4月</span><span>5月</span><span>6月</span><span>7月</span><span>现在</span></div><div class="frequency"><span><i style="width:88%"></i><b>高频 1–3000</b><em>88%</em></span><span><i style="width:61%"></i><b>中频 3001–8000</b><em>61%</em></span><span><i style="width:23%"></i><b>低频 8000+</b><em>23%</em></span></div></article>
+        <article class="metric-card calendar-card"><header><div><span class="card-icon">◫</span><div><small>HABIT TRACKER</small><h3>学习日历</h3></div></div><b>2026 · AUG</b></header><div id="habitCalendar" class="habit-calendar" aria-label="近八周学习热力图"></div><div class="calendar-legend"><span>少</span><i></i><i></i><i></i><i></i><span>多</span></div><div class="calendar-summary"><div><strong>23.5h</strong><small>本月投入</small></div><div><strong>82%</strong><small>计划完成率</small></div><div><strong>46</strong><small>连续天数</small></div></div></article>
+        <article class="library-card"><header><div><small>ACTIVE MATERIAL</small><h3>正在精读</h3></div><span>READING · C1</span></header><div class="material"><div class="material-cover">THE<br/>ATLANTIC<small>IDEAS</small></div><div><p class="material-type">ARTICLE · 18 MIN</p><h4>How knowledge workers can reclaim their attention</h4><p>注意力不是个人意志问题，而是环境设计问题。</p><div class="tag-row"><span>12 生词</span><span>6 表达</span><span>1 复述</span></div><button data-action="reading">继续精读 →</button></div></div></article>
+        <article class="output-card"><header><div><small>OUTPUT PRACTICE</small><h3>输出练习墙</h3></div><div class="segmented"><button class="active" data-output="writing">写作</button><button data-output="speaking">口语</button></div></header><div id="outputContent"><div class="diff-block"><p><del>People is easily distracted by informations.</del></p><p><ins>People are easily distracted by a constant stream of information.</ins></p></div><div class="score-row"><span>语法 <b>7.0</b></span><span>词汇 <b>6.5</b></span><span>连贯 <b>7.0</b></span><span>自然度 <b>6.5</b></span></div></div></article>
+      </div>
+    </section>
+
+    <section class="ai-section section dark-section" id="ai">
+      <div class="section-title reveal"><div><p class="eyebrow">03 · AI LEARNING LAB</p><h2>从理解模型，到<span>创造工具</span></h2></div><p>学习路径、Prompt、评测与项目共用同一套实验记录。</p></div>
+      <div class="roadmap reveal"><header><h3>学习路径</h3><span>整体进度 58%</span></header><div class="roadmap-line"><article class="complete"><i>✓</i><small>FOUNDATION</small><h4>基础与 Python</h4><span>12 / 12</span></article><article class="complete"><i>✓</i><small>MACHINE LEARNING</small><h4>机器学习</h4><span>18 / 18</span></article><article class="current"><i>03</i><small>DEEP LEARNING</small><h4>深度学习</h4><span>9 / 16</span></article><article><i>04</i><small>LLM APPLICATION</small><h4>大模型应用</h4><span>7 / 20</span></article><article><i>05</i><small>AGENT SYSTEM</small><h4>智能体系统</h4><span>2 / 12</span></article></div></div>
+      <div class="ai-grid reveal">
+        <article class="prompt-library"><header><div><small>PROMPT LIBRARY</small><h3>可复用提示词</h3></div><label class="compact-search">⌕ <input id="promptSearch" placeholder="搜索 Prompt" /></label></header><div id="promptList"><div class="prompt-item" data-search="研究 分析 research"><span class="prompt-category">研究分析</span><div><h4>深度研究拆解器</h4><p>将复杂问题拆为假设、证据、反证与行动建议。</p></div><button class="copy-prompt" data-copy="请将问题拆分为核心假设、支持证据、潜在反证和下一步验证行动。">复制</button></div><div class="prompt-item" data-search="写作 editing"><span class="prompt-category">写作编辑</span><div><h4>保留语气的结构编辑</h4><p>提升逻辑密度，同时保留作者原有表达气质。</p></div><button class="copy-prompt" data-copy="请优化结构和逻辑密度，保留原作者语气，并解释关键修改。">复制</button></div><div class="prompt-item" data-search="学习 费曼 learning"><span class="prompt-category">学习教练</span><div><h4>费曼检验对话</h4><p>用追问定位理解缺口，而不是直接给出答案。</p></div><button class="copy-prompt" data-copy="请用连续追问检验我的理解，在我回答前不要直接给出答案。">复制</button></div></div></article>
+        <article class="model-lab"><header><div><small>MODEL EVALUATION</small><h3>模型实验</h3></div><span>最新 · #007</span></header><div class="eval-title"><p>任务：长文结构化摘要</p><span>质量 / 速度 / 成本</span></div><div class="model-row"><b>Model A</b><div><i style="width:91%"></i></div><em>9.1</em></div><div class="model-row"><b>Model B</b><div><i style="width:84%"></i></div><em>8.4</em></div><div class="model-row"><b>Model C</b><div><i style="width:76%"></i></div><em>7.6</em></div><blockquote>结论：A 的结构保持最好；B 在速度和成本之间更适合批量处理。</blockquote><a href="#ai">查看完整实验记录 →</a></article>
+        <article class="project-card"><small>FEATURED PROJECT · 2026</small><div class="project-visual"><span>INPUT</span><i>→</i><span>THINK</span><i>→</i><span>OUTPUT</span></div><h3>Personal Research Copilot</h3><p>把网页、播客和本地笔记整合成带引用的研究工作流。</p><div class="tag-row"><span>RAG</span><span>Agent</span><span>Obsidian</span></div><footer><span><i></i> LIVE DEMO</span><a href="#ai">查看项目 ↗</a></footer></article>
+      </div>
+    </section>
+
+    <section class="growth-section section" id="growth">
+      <div class="section-title reveal"><div><p class="eyebrow">04 · PERSONAL GROWTH</p><h2>私人数据，公开<span>阶段成果</span></h2></div><p>健康、体态和工作记录默认仅保存在当前浏览器；公开站只展示方法与里程碑。</p></div>
+      <div class="privacy-banner reveal"><div><span class="shield">◈</span><div><b>LOCAL PRIVATE MODE</b><p>下面新增的记录只保存在这台设备的浏览器，不会上传 GitHub 或公开网站。</p></div></div><label class="switch"><input type="checkbox" id="privacyToggle" checked /><span></span><b>已保护</b></label></div>
+      <div class="growth-tabs reveal" role="tablist"><button class="active" data-growth="fitness">健身减脂</button><button data-growth="skincare">护肤</button><button data-growth="posture">体态矫正</button><button data-growth="career">职业发展</button></div>
+      <div class="growth-panel reveal" id="growthPanel">
+        <div class="body-metrics"><article><small>CURRENT WEIGHT</small><strong>68.4 <span>kg</span></strong><em>↓ 3.8 kg / 90 days</em></article><article><small>BODY FAT</small><strong>19.6 <span>%</span></strong><em>↓ 2.1%</em></article><article><small>WAIST</small><strong>78.2 <span>cm</span></strong><em>↓ 4.5 cm</em></article><article><small>TRAINING</small><strong>32 <span>sessions</span></strong><em>88% 完成率</em></article></div>
+        <div class="growth-main"><article class="body-chart"><header><h3>身体趋势</h3><div><button class="active">体重</button><button>体脂</button><button>围度</button></div></header><svg viewBox="0 0 800 240" aria-label="身体趋势示意图"><g class="grid-lines"><path d="M40 35H780M40 90H780M40 145H780M40 200H780"/></g><path class="body-area" d="M40 55 C120 62 150 80 220 77 S340 112 410 105 S540 145 610 139 S715 178 780 171 L780 210 L40 210Z"/><path class="body-line" d="M40 55 C120 62 150 80 220 77 S340 112 410 105 S540 145 610 139 S715 178 780 171"/></svg><div class="chart-axis"><span>05.01</span><span>05.20</span><span>06.10</span><span>07.01</span><span>07.20</span><span>08.06</span></div></article><article class="quick-log"><header><div><small>QUICK LOG</small><h3>记录今天</h3></div><span>仅本地</span></header><form id="fitnessForm"><label>体重（kg）<input name="weight" type="number" step="0.1" placeholder="68.4" required /></label><label>训练内容<input name="training" placeholder="例如：上肢力量 45min" required /></label><label>今日感受<textarea name="note" rows="3" placeholder="状态、饮食或值得记录的变化"></textarea></label><button class="button primary" type="submit">保存到本地</button><p id="saveMessage" class="save-message" aria-live="polite"></p></form></article></div>
+        <div class="milestones"><article><span>🏅</span><div><small>MILESTONE</small><h4>连续训练 30 次</h4><p>2026.07.28 解锁</p></div></article><article><span>↘</span><div><small>PERSONAL BEST</small><h4>体重阶段新低</h4><p>比起点下降 5.3%</p></div></article><article><span>◫</span><div><small>NEXT CHECK-IN</small><h4>体态对比拍摄</h4><p>还有 6 天</p></div></article></div>
+      </div>
+    </section>
+
+    <section class="business-section section" id="business">
+      <div class="section-title reveal"><div><p class="eyebrow">05 · BUSINESS PRACTICE</p><h2>把商业判断放进<span>真实实验</span></h2></div><p>每次实践都从假设开始，以数据结束，并沉淀为下一次决策的资产。</p></div>
+      <div class="business-summary reveal"><div><small>ACTIVE EXPERIMENTS</small><strong>03</strong><span>2 个进入验证阶段</span></div><div><small>VALIDATED REVENUE</small><strong>¥ 8,640</strong><span>近 90 天 · 非投资收益</span></div><div><small>RESEARCH NOTES</small><strong>17</strong><span>覆盖 5 个行业</span></div><div><small>DECISION QUALITY</small><strong>72%</strong><span>假设命中率</span></div></div>
+      <div class="business-grid reveal"><article class="experiment-board"><header><div><small>EXPERIMENT PIPELINE</small><h3>商业实验看板</h3></div><button>+ 新建实验</button></header><div class="experiment"><span class="exp-status testing">验证中</span><div><h4>知识服务产品化</h4><p>假设：结构化研究服务能为独立创作者节省 5 小时/周。</p><div class="experiment-metrics"><span><b>12</b> 访谈</span><span><b>4</b> 意向</span><span><b>2</b> 付费</span><span><b>¥2,980</b> 收入</span></div></div><em>67%</em></div><div class="experiment"><span class="exp-status build">构建中</span><div><h4>AI 工作流模板包</h4><p>假设：可直接复用的工作流比 Prompt 合集更具付费价值。</p><div class="experiment-metrics"><span><b>38</b> 等候</span><span><b>6</b> 测试</span><span><b>3</b> 反馈</span></div></div><em>42%</em></div><div class="experiment"><span class="exp-status learn">学习中</span><div><h4>英文研究简报</h4><p>假设：中文决策者需要经过筛选和判断的英文行业信息。</p><div class="experiment-metrics"><span><b>5</b> 样刊</span><span><b>18</b> 订阅</span><span><b>0</b> 付费</span></div></div><em>25%</em></div></article>
+        <article class="canvas-card"><header><div><small>BUSINESS MODEL CANVAS</small><h3>本周拆解</h3></div><span>NO. 008</span></header><h4>Notion：从工具到生态系统</h4><div class="canvas-grid"><span><b>价值主张</b>一体化、可组合的工作空间</span><span><b>核心用户</b>知识工作者与协作团队</span><span><b>增长引擎</b>模板、社区与口碑传播</span><span><b>收入结构</b>席位订阅与企业服务</span></div><blockquote>真正的壁垒不是功能数量，而是用户在工具中积累的结构与协作关系。</blockquote><a href="#business">阅读完整拆解 →</a></article>
+        <article class="research-list"><header><div><small>MARKET BRIEFS</small><h3>行业研究简报</h3></div><a href="#business">全部 →</a></header><a href="#business"><time>JUL 28</time><div><b>个人 AI 助手的产品机会地图</b><span>AI · 8 min read</span></div><i>↗</i></a><a href="#business"><time>JUL 16</time><div><b>知识付费正在转向结果交付</b><span>Creator Economy · 6 min</span></div><i>↗</i></a><a href="#business"><time>JUN 30</time><div><b>一人公司的成本结构与杠杆</b><span>Business · 11 min</span></div><i>↗</i></a></article>
+      </div>
+    </section>
+
+    <section class="now-section section"><div class="now-wrap reveal"><div><p class="eyebrow">NOW · AUGUST 2026</p><h2>我正在把这个系统，<br />变成真正<span>每天会用的东西。</span></h2><p>当前重点：完善 Obsidian 自动同步、减少重复记录、让每个仪表盘都指向一个明确行动。</p></div><div class="now-stack"><article><span>01</span><div><small>BUILDING</small><h3>知识图谱与 MOC 自动生成</h3></div><b>68%</b></article><article><span>02</span><div><small>LEARNING</small><h3>英文深度阅读与复述</h3></div><b>46 DAYS</b></article><article><span>03</span><div><small>EXPERIMENTING</small><h3>一人公司最小付费验证</h3></div><b>TESTING</b></article></div></div></section>
   </main>
 
-  <footer><div class="brand"><span class="brand-mark">S</span><span>songspace</span></div><p>在输入与输出之间，持续生长。</p><div><span>由 Obsidian 驱动</span><span>最后更新 · 2026.07.19</span></div></footer>
+  <footer><div><a class="brand" href="#home"><span class="brand-mark">S</span><span><b>songspace</b><small>GROWTH OS</small></span></a><p>在输入与输出之间，持续生长。</p></div><div class="footer-links"><a href="#knowledge">知识花园</a><a href="#english">英语学习</a><a href="#ai">AI Lab</a><a href="#growth">个人成长</a><a href="#business">商业实践</a></div><div class="footer-meta"><span><i></i> 系统运行正常</span><span>由 Obsidian × GitHub × Vercel 驱动</span><span>© 2026 Songspace</span></div></footer>
 
-  <dialog id="privateDialog"><button class="close" aria-label="关闭">×</button><p class="eyebrow">PRIVATE SPACE</p><h2>过程留给自己，<br />成果分享给世界。</h2><p>日记、健康数据、工作文档和未完成实验默认不会构建到公开站点。未来可接入身份验证后访问私人驾驶舱。</p><div class="privacy-rule"><code>private: true</code><span>永不发布</span></div><div class="privacy-rule"><code>draft: true</code><span>暂不发布</span></div><div class="privacy-rule"><code>publish: true</code><span>允许公开</span></div></dialog>
+  <dialog id="privateDialog"><button class="close" aria-label="关闭">×</button><span class="dialog-icon">◈</span><p class="eyebrow">PRIVACY ARCHITECTURE</p><h2>公开是选择，<br />私密是默认。</h2><p>日记、健康原始数据、工作文档、联系人和未完成实验不会进入公开构建。浏览器本地记录也不会发送到服务器。</p><div class="privacy-rule"><code>private: true</code><span>构建前剔除</span></div><div class="privacy-rule"><code>draft: true</code><span>仅本地预览</span></div><div class="privacy-rule"><code>publish: true</code><span>允许公开</span></div><small>注意：前端隐藏不等于权限控制。真正的私人云端空间需要独立身份验证和数据库。</small></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
 </html>
